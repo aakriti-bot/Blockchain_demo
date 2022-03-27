@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-image: url({{ url_for('static', filename='img/blockchain.jpg') }});
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+</head>
+<body>
+    <h1>
+        Welcome to our blockchain world.
+    </h1>
+    <a href="http://192.168.29.123:5000/get_block">Get Block</a>
+    <a href="http://192.168.29.123:5000/mine">Mine</a>
+    <a href="http://192.168.29.123:5000/verify">Verify</a>
+</body>
+</html>
