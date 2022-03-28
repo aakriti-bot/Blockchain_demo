@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body{
-            background-image: url({{ url_for('static', filename='img/blockchain.jpg') }});
-        }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
+    <style>
+        body{
+            background-color: #207398;
+        }
+        h1{
+            text-align: center;
+            margin-top: 150px;
+            border: 0px;
+            padding: 0%;
+        }
+        div{
+            background-color: aliceblue;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 50px;
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        Welcome to our blockchain world.
-    </h1>
-    <a href="http://192.168.29.123:5000/get_block">Get Block</a>
-    <a href="http://192.168.29.123:5000/mine">Mine</a>
-    <a href="http://192.168.29.123:5000/verify">Verify</a>
+    <h1>Blockchain</h1>
+    <div>
+    <p>Get Block: </p><button onclick="window.location.href='/get_block';">Get Block</button><br>
+    <p>For mining the block: </p><button onclick="window.location.href='/mine';">Mine</button><br>
+    <p>For Verifying: </p><button onclick="window.location.href='/verify';">Verify</button>
+    </div>
 </body>
 </html>
